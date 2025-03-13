@@ -1,0 +1,206 @@
+body {
+    background: url(image/mistyrose.jpg) center center fixed;
+    background-color: mistyrose;
+    font-family:Arial, sans-serif;
+    background-size: cover;
+}
+
+
+/*header style*/
+header {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: lightpink 0 4px 8px ;
+    padding: 2.5rem;
+    margin: 2rem
+}
+hr { 
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+#br1 {
+    display: none;
+}
+
+/*styling image*/
+img {
+    vertical-align: middle;
+    margin-right: 1px;
+    width: 32px;
+    height: 32px;}
+/*all images have the same size but the icon "black phone" is bigger than others, so I have to adjust a little bit*/
+#phone {
+    vertical-align: middle;
+    margin-right: 1px;
+    width: 25px;
+    height: 25px;
+}
+
+/*styling link*/
+#link1 { color: red;
+         text-decoration: none;}  
+  /*the color of email is red*/
+#link2 { color:rgb(240, 206, 8);
+         text-decoration: none;}
+  /*the color of phone is quite yellow*/
+#link3 { color: mediumspringgreen;
+         text-decoration: none;}
+  /*the color of ig is green*/
+#pin {
+    text-decoration: none;
+    color: rgb(110, 105, 105);
+}
+#pin:hover { color: blue !important;} /*the class attribute that I used, making all links have hover color*/
+
+
+/*styling for navbar*/
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 228, 225, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.nav-button {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+.nav-button:hover {
+    background-color: rgba(245, 103, 103, 0.5);
+    border-radius: 20px;
+    color: white;
+}
+section { /*making the section appear below the sidebar as I click*/
+    scroll-margin-top: 59px; 
+}
+
+/* styling section*/
+section {
+    background-color: white;
+    border-radius: 30px;
+    padding: 1.2rem;
+    margin: 2rem;
+    box-shadow: pink 0 4px 8px;
+    transition: transform 0.3s ease; 
+    animation: fadeIn 0.5s ease-out forwards;
+}
+section:hover {
+    transform: translateX(-10px) !important ;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #fef2f4;
+    animation-play-state: paused;
+}
+
+
+/*styling h2*/
+h2 {
+   margin-bottom: 2px;
+   border-bottom: 2px tomato solid;
+   display: inline-block;
+   padding: 3.5px;
+   font-size: 1.7rem;
+}
+
+/*styling h3*/
+h3 {
+    font-size: 1.35rem;
+}
+
+/*styling p*/
+#cre {
+    text-align: center;
+    font-size: 0.8rem; 
+}
+p {
+    color: rgb(110, 105, 105);
+    font-size: 1.2rem;
+}
+
+/*styling list*/
+ul {
+    color: rgb(110, 105, 105);
+    font-size: 1.2rem;
+}
+
+
+/*Responsive design*/
+@media (max-width: 768px) {
+    /*style for tablets and mobile devices*/
+    .contact_info {
+        padding: 10px;
+        width:auto;
+        font-size: 1rem;
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+    }
+    section {
+        width: auto;
+        padding: 1px;
+        border: 1px;
+        margin: 1px;
+    }
+    header {
+        padding: 1.5rem 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #br1 {
+        display: initial;
+    }
+    }
+    
+    @media screen and (max-width:790px) {
+        #parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            width: 600px;
+        }
+    }
+
+    @media screen and (max-width:690px) {
+        section {
+            width:500px ;
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width:570px) {
+        section {
+            width:400px ;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        section {
+            width:320px ;
+        }
+    }
+    
+    /* Subtle Animations */
+    /* @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(40px); 
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    } */

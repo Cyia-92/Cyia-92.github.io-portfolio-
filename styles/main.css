@@ -1,0 +1,605 @@
+body {
+    background-color: mistyrose;
+}
+h2 { font-size: 40px;}
+p { font-size: 25px;}
+#needbr {display: none;}
+footer a:hover {
+    color: red !important;
+}
+
+/*styling for banner*/
+/*#sec_1 {
+    background: url(image/bg_1.png) center fixed; 
+    there is a criteria require a full-width picture (maybe set img to the background) but i dont really like the style including that so i put it in the comment
+}*/
+#bannerimg {
+    width: 100%;
+}
+#wel {
+    font-size: 80px;
+    text-align: center;
+    margin: 10px;
+}
+#sec_1 {
+    background-color: white;
+    height: 600px;
+}
+#sec_1 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 20px;
+}
+
+
+/*styling for section 2*/
+#sec_2 {
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column; 
+}
+#sec_2 p{
+    font-size: 20px;
+}
+#button1 {
+    background: white;
+    padding: 15px 30px;
+    border: solid black 2px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px; 
+}
+#button1:hover {
+    color: white;
+    background-color: rgba(245, 103, 103, 0.5); ;
+}
+
+
+/*styling for form*/
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgb(254, 246, 244);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    display: none;
+    z-index: 2000;
+}
+.enter {
+    width: 350px;
+    margin: 10px;
+}
+.choice {
+    margin: 5px;
+}
+h3 {
+    font-size: 30px;
+}
+.button2 {
+    padding: 5px;
+    margin: 5px;
+    background: rgba(245, 103, 103, 0.5);
+    border: solid 1px rgba(76, 10, 10, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-top: 20px;
+}
+.button2:hover {
+    text-decoration: underline;
+    color: blue;
+    background: rgba(246, 79, 79, 0.3) ;
+}
+
+
+/*styling for section 3*/
+#sec_3 {
+    background-color: white;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+#pic1 {
+    border-radius: 20px;
+    height: 500px;
+    margin-left: 4em;
+}
+#vision {
+    margin-left: 3em;;
+}
+
+
+
+/*styling for section 4*/
+#sec_4 h2 {
+    display: inline-block;
+    border-bottom: 2px black solid ;
+    margin: 1em
+}
+.trending img {
+    height: 550px;
+    width: 370px;
+    border-radius: 30px;
+}
+.trending {
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: center;
+}
+.caption {
+    width: 370px;
+    margin-bottom: 40px;    
+}
+
+
+/*styling for section 5*/
+#sec_5 {
+    background-color: white;
+    height: 980px;
+}
+hr {
+    height: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+#sec_5 img {
+    height: 300px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+#sec_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+figcaption {
+    font-style: italic;
+    padding: 5px;
+}
+
+
+/*styling for section 6*/
+#sec_6 {
+    height: 1000px;
+}
+.cert img {
+    border: 3px solid black;
+    height: 400px;
+}
+#sec_6 h2 {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    margin: 1em;
+}
+.cert {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin-left: 50px;
+    align-items: center;
+}
+.cert p {
+    font-size: 25px
+}
+#cert2 {
+    justify-self: end;
+    margin-right: 50px;
+}
+
+
+/*styling for section 7*/
+#banner2 {
+    width: 100%;
+}
+.icon {
+    height: 40px;
+}
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+#contact a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+#contact {
+    display: grid;
+    grid-template-columns: 800px 200px auto;
+    grid-template-rows: 150px 150px;
+    grid-template-areas: "a5 a1 a2"
+                         "a5 a3 a4" ;
+    padding:10px;
+    margin: 10px;
+    align-items: center;
+    grid-gap: 20px;
+}
+#a5 { 
+    font-size: 100px;
+    grid-area: a5;
+    width: 500px;
+    margin-left: 30px;
+}
+#a1 {
+    grid-area: a1;
+    align-self: end;
+    margin-bottom: 0;
+}
+#a2 {
+    grid-area: a2;
+    align-self: end;
+    margin-bottom: 0;
+
+}
+#a3 {
+    grid-area: a3;
+    align-self: start;
+    margin-top: 0;
+}
+#a4 {
+    grid-area: a4;
+    align-self: start;
+    margin-top: 0;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+
+/*styling for section 8*/
+#sec_8 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+}
+#sec_8 h2 {
+    text-align: center;
+    padding: 1em;
+}
+.comments {
+    display: grid;
+    grid-template-columns: 500px 250px 250px;
+    grid-template-rows: auto auto;
+    grid-template-areas: "cmt1 cmt2 cmt3" "cmt4 cmt2 cmt3" ;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 30px;
+}
+#cmt1 {
+    grid-area: cmt1 ;
+    align-self: start;
+    background-color: rgba(249, 164, 164, 0.3);
+}
+#cmt2 {
+    grid-area: cmt2;
+    align-self: start;
+    background-color: rgba(167, 32, 32, 0.6);
+    color: white;
+    align-self: stretch;
+}
+#cmt3 {
+    grid-area: cmt3;
+    align-self: start;
+    background-color: rgba(139, 2, 2, 0.705);
+    color: white;
+    align-self: stretch;
+}
+#cmt4 {
+    grid-area: cmt4;
+    background-color: rgba(248, 131, 131, 0.5);
+}
+.common{ /* apply style for all comments instead of each ones respectively*/
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+/*styling for footer*/
+footer p {
+    font-size: 15px;
+    background-color: rgb(46, 46, 90);
+    color: white;
+    text-align: center;
+    padding: 20px
+}
+
+
+/*navbar styling*/
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 228, 225, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.nav-button {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+.nav-button:hover {
+    background-color: rgba(245, 103, 103, 0.5);
+    border-radius: 20px;
+    color: white;
+}
+section { /*making the section appear below the sidebar as I click*/
+    scroll-margin-top: 59px; 
+}
+* {
+    scroll-behavior: smooth; 
+}
+#navhr {
+    background-color: black;
+    height: 2px;
+}
+
+
+/*Responsive adjustments*/
+@media screen and (max-width: 1285px) {
+    .trending {
+        gap:40px;
+    }
+    .trending img, .caption {
+        width: 300px;
+    }
+    .trending img {
+        height: 445px;
+    }
+    #button1, .button2 {
+        color: black;
+        font-weight: normal;
+    }
+
+    /*styling for section 6*/
+    #sec_6 {height: auto;}
+    #cert2 {
+        grid-area: cert2;
+        margin: 0;
+        justify-self: center;
+    }
+    .cert {
+        grid-template-columns: auto;
+        grid-template-areas: "cert2" "cap_cert2";
+        margin-left: 0px;
+        justify-items: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 20px;
+    }
+    #cap_cert2 {grid-area: cap_cert2; }
+    .cert p {width: 600px;}
+
+    /*styling for section 7*/
+    #contact {
+        grid-template-columns: auto auto;
+        grid-template-rows: 300px 1fr 1fr;
+        grid-template-areas: "a5 a5"
+                             "a1 a2"
+                             "a3 a4";
+        grid-gap: 10px;
+    }
+    #a3 {
+        margin-right: 23px;
+    }
+    #a1, #a3 {
+        justify-self: end;
+    }
+
+    /*styling for section 8*/
+    #sec_8 {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .comments {
+        grid-template-columns: 200px 200px ;
+        grid-template-rows: auto auto;
+        grid-template-areas: "cmt1 cmt4" "cmt2 cmt3";
+        align-items: stretch;
+    }
+}
+
+
+@media screen and (max-width:1050px) {
+    .trending {
+        gap:20px;
+    }
+    .trending img, .caption {
+        width: 200px;
+    }
+    .trending img {
+        height: 297px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h2 {font-size: 40px;}
+    p { font-size: 25px;}
+    #sec_1 {height:auto;}
+    /* styling for section 3*/
+    #pic1 { 
+        height: 450px;
+        padding-top: 20px;
+        margin: 0;
+        border-radius: 60px;
+    }
+    #sec_3 {
+        flex-direction: column;
+        height: auto;
+    }
+    /*styling for section 4*/
+    .trending {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    } 
+    .trending img, .caption {
+        width: 370px;
+    }
+    .trending img {
+        height: 550px;
+    }
+    /*styling for section 5*/
+    #sec_5 p {
+        margin: 10px;
+    }
+    #sec_5 {
+        height: auto;
+    }
+    figcaption {
+        font-size: 10px;
+    }
+    /*styling for the button, idk why the button on my phone displays wrongly so I have to add more property*/
+    #button1, .button2 {
+        color: black;
+        font-weight: normal;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    /*adjusting navbar*/
+    .nav-button {
+        font-size: 17px;
+        padding: 5px 10px;
+        margin: 0 2.5px;
+    }
+    /*adjusting img of section 6*/
+    .cert img {height: 300px;}
+    .cert p {width: 500px;}
+    #a5 {font-size: 80px;}
+    /*edit the size of form*/
+     .form-popup {
+        width: 400px;
+    }
+}
+
+
+/*styling for iphone screen about 450px*/
+@media screen and (max-width: 576px) {
+    h2 { font-size: 25px;}
+    p { font-size: 15px;}
+    #wel {font-size: 50px;}
+    #sec_2 p {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*styling navigation bar*/ 
+    .nav-button {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+    #navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+
+    /*styling for section 2 + 3 + 4*/
+    #sec_2 {height: 360px;}
+    #needbr {display: block;}
+    #vision {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    #pic1 {
+        height: 380px;
+    }
+    .trending img {
+        height: 450px;
+    }
+    .trending img, .caption {
+        width: 303px;
+    }
+
+    /*styling for section 5 + 6*/
+    #sec_5 img {
+        height: 200px;
+    }
+    .cert img { 
+        height: 200px;
+    }
+    .cert p {
+        width: 300px;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 15px;
+    }
+
+    /*styling for section 7 + 8*/
+    .comments {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "cmt1" "cmt4" "cmt2" "cmt3";
+        padding: 20px;
+    }
+    #a5 {
+        font-size: 50px;
+        width: 200px;
+        align-items: flex-end;
+    }
+    #contact {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "a5" "a1" "a2" "a3" "a4";
+    }
+    #a1, #a2, #a3, #a4 {
+        justify-self: center;
+        margin: 0;
+    }
+    #a2, #a3 {
+        padding-right: 18px;
+    }
+    #a4 {
+        padding-right: 85px;
+    }
+    /*edit the size of form*/
+    .form-popup {
+        width: 300px;
+    }
+    .enter {
+        width: 270px;
+    }
+    section {
+        scroll-margin-top: 47px;
+    }
+}
+
+/*giving picture transition*/
+img {
+    transition: transform 0.3s ease; 
+}
+img:hover {
+    transform: scale(1.05);
+}
+#bannerimg, #banner2 {
+    transform:none;
+}
