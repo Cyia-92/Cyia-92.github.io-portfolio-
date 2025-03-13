@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Doris' Portfolio </title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<!--my work is here-->
+<body>
+    <section id="sec_1">
+        <img id="bannerimg" src="image/bg_1.png" alt="banner1">
+        <h1 id="wel"> Welcome to Doris' Portfolio </h1>
+        <p> - social media content creator - </p>
+    </section>
+
+    <hr id="navhr">
+    <nav id="navbar">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="resume.html" class="nav-button">Resume</a>
+        <a href="about.html" class="nav-button">About me</a>
+        <a href="#sec_6" class="nav-button">Achievements</a>
+        <a href="#sec_8" class="nav-button">Comments</a>
+        <a href="#sec_7" class="nav-button">Contacts</a>
+    </nav>
+
+    <section id="sec_2"> <!--the button located here-->
+        <h2> Why not you? <br id="needbr"> Why not now? </h2>
+        <p> Explore the creative journey by being an up-to-date content creator through my notable achievements and diverse experiences. <br> Dive in and get inspired! </p>
+        <button onclick="document.getElementById('subscribe_form').style.display='block'" id="button1"> Subscribe </button>
+        <div id="subscribe_form" class="form-popup"> 
+            <form>
+                <h3> Subscribe for more information </h3>
+                <label for="customername"> Your name: </label> <br>
+                <input type="text" id="customername" class="enter" name="customername" placeholder="Enter your name" required> <br>
+                <label for="useremail"> Email:</label> <br>
+                <input type="email" id="useremail" class="enter" name="useremail" placeholder="Enter your email" required>
+                <div id="ques" >
+                <p> Do you agree to receive more information from this website? </p>
+                    <label class="choice"><input type="radio" name="ques" value="yes" required> Yes </label>
+                    <label class="choice"><input type="radio" name="ques" value="no" required> No </label>
+                </div>
+                <button class="button2" type="submit"> Submit </button>
+                <button class="button2" type="button" onclick="document.getElementById('subscribe_form').style.display='none'"> Close </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="sec_3"> <!--vision of a content creator-->
+        
+        <img id="pic1" src="image/pic1.jpg" alt="pic1">
+        <!-- this is my overlay
+        <div class="overlay">
+            <p> One of the most trending posts in 2023 - personal jewelry </p>
+        </div> -->
+        
+
+        <div id="vision" >
+            <h2> Vision </h2> <br>
+            <p> I believe that my mission is to create captivative and inspiring content
+                which can easily approach to a wide range of audiences. Being a content creator 
+                I aim to foster a community that celebrates creativity, encourages meaningful 
+                dialogue, and drives positive social impact.  </p>
+        </div>
+    </section>
+
+    <section id="sec_4"> <!--her top trending posts-->
+        <h2> Top trending posts 2024 </h2>
+    <div class="trending"> 
+    <div id="trend1">
+        <img src="image/trend1.jpg" alt="trend1">
+        <p class="caption"> With a crisp, buttery crust and creamy custard filling customized to 
+            satisfy all kind of sweet tooth. It's topped with various type of juicy fruits, making sure to quench your thirst!  
+            <br> <b>#Tart #Food</b> </p>
+    </div>
+
+    <div id="trend2">
+        <img src="image/trend2.jpg" alt="trend2">
+        <p class="caption"> With a crisp, buttery crust and creamy custard filling customized to 
+            satisfy all kind of sweet tooth. It's topped with various type of juicy fruits, making sure to quench your thirst!  
+            <br> <b>#Tart #Food</b> </p>
+    </div>
+
+    <div id="trend3">
+        <img src="image/trend3.jpg" alt="trend3">
+        <p class="caption"> Come and take a sip!!! A perfect yellow sour lemonade with a spoon of
+            honey can sure to refresh your day. <br> <b>#LemonadeLove #Summer </b> </p>
+    </div>
+    </div>
+    </section>
+
+    <hr>
+    <section id="sec_5">
+        <h2> Who will be your viewers? </h2>
+        <figure>
+        <img src="image/graphic2.png" alt="graph2">
+        <figcaption> The percentage of each gender who is interested in her contents.</figcaption>
+        </figure>
+        <p> Having the right targeted segmentations at the beginning helps you <br> determine
+            what kind of content should you create in order to <br> effectively convey your message and persuade your audience.</p>
+        <figure>
+        <img src="image/graph1.png" alt="graphic1">
+        <figcaption>The number of followers in three platform within 5 years</figcaption>
+        </figure>
+    </section>
+    <hr>
+
+
+    <section id="sec_6"> <!--her certificate here-->
+        <h2> Achievements </h2>
+        <div class="cert" >
+            <img src="image/certificate.png" alt="certificate">
+            <p> The Creator Rewards Program, is a rewards program designed to help creators 
+                foster their creativity and generate higher revenue potential by posting 
+                high-quality, original content.By participating in the Creator Rewards Program,
+                 creators can elevate their craft, grow their audience, and achieve greater financial 
+                 success while contributing to a vibrant and diverse content ecosystem.
+            </p>
+            <p id="cap_cert2"> I was honered to be one of the top three content creators who can effectively captivate their audience within 
+                a specific period of time. This achievement not only highlights my dedication and 
+                creativity but also gave me a chance to prove myself through a contract with the prestigious XX
+                platform, which has brought me to where I am today.  
+            </p>
+            <img id="cert2" src="image/cert2.png" alt="achie">
+        </div>
+    </section>
+
+    <section id="sec_8">
+        <h2> What my audiences said about me? </h2>
+        <div class="comments"> 
+            <div id="cmt1" class="common">
+                <h3> Armin Arlert </h3>
+                <p> When I was so depressed, your creative and healing content gave me a hand to pull me out of 
+                    the trauma. It inspired me to love myself and makes a better me today </p>
+            </div>
+    
+            <div id="cmt2" class="common">
+                <h3> Eren Yeagar</h3>
+                <p> I've been a big fan of you since the very first day. During my hardest period of time, you
+                    have always made my day. Thank you for being such a positive influencer
+                </p>
+            </div>
+    
+            <div id="cmt3" class="common">
+                <h3> Mikasa Ackerman </h3>
+                <p> Omg, how can you always have such those delicious and delectable recipes!!!
+                    I and my friends are so crazy about them! Looking forward to see more!!! </p>
+            </div>
+    
+            <div id="cmt4" class="common">
+                <h3> Annie Leonhart </h3>
+                <p> Watching your journey has been incredibly inspiring.
+                     Keep shining, and we'll keep cheering you on</p>
+            </div>
+        </div>
+        </section>
+
+    <section id="sec_7">
+        <img id="banner2" src="image/banner2.jpg" alt="banner2">
+        <div id="contact">
+            <h2 id="a5"> Contact information </h2>
+            <a href="https://en.wikipedia.org/wiki/Cat" id="a1">
+            <p class="info" > <img class="icon" src="image/mail.jpg" alt="email"> xxx@gmail.com </p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Ragdoll" id="a2">
+            <p class="info" > <img class="icon" src="image/call.jpg" alt="call"> xxx-xxx-xxxx </p> 
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Tabby_cat" id="a3">
+            <p class="info" > <img class="icon" src="image/ig.jpg" alt="ig"> my Instagram </p>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Maine_Coon" id="a4">
+            <p class="info" > <img class="icon" src="image/linkdn.jpg" alt="linkdn"> Doris  </p>
+            </a>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p> &copy; 2025 Portfolio | All rights reserved | Images are created by myself and <a href="https://www.pinterest.com/" style="color: white; text-decoration: none;" target="_blank" > Pinterest </a> </p>
+    </footer>
+</body>
+</html>
